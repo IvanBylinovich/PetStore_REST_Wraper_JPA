@@ -1,0 +1,75 @@
+POST  http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "name": "qwe",
+  "password": "qwe",
+  "username": "1",
+  "addressList": [
+    {
+      "home": 3,
+      "name": "string"
+    }
+  ]
+}
+
+###
+
+POST  http://localhost:8080/user/saveUsers
+Content-Type: application/json
+
+[
+{
+  "name": "qwe",
+  "password": "qwe",
+  "username": "2",
+  "addressList": [
+    {
+      "home": 3,
+      "name": "string"
+    }
+  ]
+},
+
+  {
+    "name": "qwe",
+    "password": "qwe",
+    "username": "1",
+    "addressList": [
+      {
+        "home": 3,
+        "name": "string"
+      }
+    ]
+  }
+]
+
+###
+
+DELETE  http://localhost:8080/user?username=1
+
+###
+
+GET  http://localhost:8080/user?username=12
+
+
+
+###
+
+PUT  http://localhost:8080/user?username=2
+Content-Type: application/json
+
+{
+  "name": "324",
+  "password": "234qwe",
+  "username": "12",
+  "addressList": [
+    {
+      "home": 34,
+      "name": "nav"
+    }
+  ]
+}
+
+###
+
